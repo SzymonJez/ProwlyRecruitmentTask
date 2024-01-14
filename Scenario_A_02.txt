@@ -1,0 +1,10 @@
+
+Feature: Search on bing.com with content category filtering
+
+	Scenario: Searching for the phrase "Prowly's Media Monitoring" with content category filtering
+
+		Given the user is on the bing.com website
+		When the user enters the phrase "Prowly's Media Monitoring" into the search field
+		And selects the option to filter by content category "Video"
+		Then the search results contain links to videos related to the phrase "Prowly's Media Monitoring"
+	
